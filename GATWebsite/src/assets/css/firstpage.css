@@ -8,7 +8,7 @@ html {
 .first {
     background-image: url("../image/header-bg.jpg");
     background-color: #cccccc;
-    height: 730px;
+    height: 650px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,7 +209,7 @@ color: aqua;
     color: #000;
     font-weight: bold;
     padding: 40px;
-    margin-top: 114px;
+    margin-top: -20px;
 }
 
 .services-inner {
@@ -283,7 +283,6 @@ color: aqua;
 .services {
     position: relative;
     z-index: 2;
-    margin-top: 13em;
 }
 
 .btn-danger {
