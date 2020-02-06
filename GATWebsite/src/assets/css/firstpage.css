@@ -1049,6 +1049,9 @@ p.text-li {
 /* responsive  */
 
 @media (max-width:500px) {
+    .col-xs-6 {
+        width: 42%;
+    }
     .nav {
         margin-top: 1em;
         margin-left: 0em;
@@ -1065,7 +1068,7 @@ p.text-li {
     }
     .navbar-toggle {
         margin-right: 0em;
-        margin-top: -12em;
+        margin-top: -10em;
     }
     .company {
         font-size: 3em;
