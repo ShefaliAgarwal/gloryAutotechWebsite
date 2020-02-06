@@ -25,7 +25,8 @@
                         "styles": [
                             "src/styles.css",
                             "src/assets/css/firstpage.css",
-                            "src/assets/css/porfolio.css"
+                            "src/assets/css/porfolio.css",
+                            "src/assets/css/career.css"
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js"
@@ -82,7 +83,8 @@
                         "styles": [
                             "src/styles.css",
                             "src/assets/css/firstpage.css",
-                            "src/assets/css/porfolio.css"
+                            "src/assets/css/porfolio.css",
+                            "src/assets/css/career.css"
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js"
