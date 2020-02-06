@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  id;
+  constructor(private activateRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.id = this.activateRoute.snapshot.paramMap.get('id');
   }
 
 }
