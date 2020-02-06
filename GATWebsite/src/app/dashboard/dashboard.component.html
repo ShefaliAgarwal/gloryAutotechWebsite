@@ -9,28 +9,30 @@
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
                     </div>
                     <div class="collapse navbar-collapse" id="mynavbar">
                         <ul class="nav pull-right">
-                            <a href="index.html">
+                            <!-- <a href="index.html">
                                 <li class="speak one"><span>HOME</span>
                                 </li>
-                            </a>
+                            </a> -->
                             <a href="#service">
                                 <li class="speak three"><span>SERVICE</span></li>
                             </a>
                             <a href="#projects">
                                 <li class="speak four"><span>PROJECTS</span></li>
                             </a>
-                            <a href="career/job.html">
+                            <!-- href="career/job.html" -->
+                            <a routerLink="/carrer">
                                 <li class="speak one"><span>CAREER</span></li>
                             </a>
-                            <a href="contect.html">
+                            <!-- href="contect.html" -->
+                            <a routerLink="/contact">
                                 <li class="speak two"><span>CONTACT US</span></li>
                             </a>
                         </ul>
@@ -68,7 +70,7 @@
                             <h4>Web Design</h4>
                             <p>All websites designed by us are Responsive meaning websites will look good on mobile as well.</p>
 
-                            <a href="#" class="btn btn-danger">More..</a>
+                            <!-- <a href="#" class="btn btn-danger">More..</a> -->
 
                         </div>
                     </div>
@@ -83,7 +85,7 @@
                         <div class="our-services-text">
                             <h4>Web Development</h4>
                             <p>We provide all round services in designing, developing and maintaining an effective web presence for your online business.</p>
-                            <a href="#" class="btn btn-danger">More..</a>
+                            <!-- <a href="#" class="btn btn-danger">More..</a> -->
                         </div>
                     </div>
                 </div>
@@ -97,7 +99,7 @@
                         <div class="our-services-text">
                             <h4>Ecommerce </h4>
                             <p>We deliver top-notch, highly customized eCommerce solutions to turn your great ideas into profitable online businesses.</p>
-                            <a href="#" class="btn btn-danger">More..</a>
+                            <!-- <a href="#" class="btn btn-danger">More..</a> -->
                         </div>
                     </div>
                 </div>
@@ -117,7 +119,7 @@
                 <div class="section_1_gallery_grid">
                     <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g1.jpg">
                         <div class="section_1_gallery_grid1">
-                            <a href="projects/project1.html">
+                            <a routerLink="/portfolio">
                                 <img src="../../assets/image/g1.jpg" alt=" " class="img-fluid">
                                 <div class="proj_gallery_grid1_pos">
                                     <h3>Recognize</h3>
@@ -129,7 +131,7 @@
                 <div class="section_1_gallery_grid aos-init aos-animate">
                     <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g2.jpg">
                         <div class="section_1_gallery_grid1">
-                            <a href="projects/project2.html">
+                            <a routerLink="/portfolio">
                                 <img src="../../assets/image/g2.jpg" alt=" " class="img-fluid">
                                 <div class="proj_gallery_grid1_pos">
                                     <h3>Recognize</h3>
@@ -141,7 +143,7 @@
                 <div class="section_1_gallery_grid aos-init">
                     <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g3.jpg">
                         <div class="section_1_gallery_grid1">
-                            <a href="projects/project3.html">
+                            <a routerLink="/portfolio">
                                 <img src="../../assets/image/g3.jpg" alt=" " class="img-fluid">
                                 <div class="proj_gallery_grid1_pos">
                                     <h3>Recognize</h3>
@@ -235,29 +237,38 @@
             <img src="../../assets/image/webdevlopment.jpg " class="img-responsive ">
         </div>
         <div class="col-md-6 ">
-            <div>
+            <div data-aos="zoom-in-left" data-aos-duration="1000">
                 <h4>App Development</h4>
                 <div class="progress ">
                     <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:60% ">60%</div>
                 </div>
-            </div>
-            <div data-aos="zoom-in-left" data-aos-duration="2000">
-                <h4>Ecommerce</h4>
-                <div class="progress ">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:70% ">70%</div>
+                <div class="col-md-6 ">
+                    <div>
+                        <h4>App Development</h4>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:60% ">60%</div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in-left" data-aos-duration="2000">
+                        <h4>Ecommerce</h4>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:70% ">70%</div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in-left" data-aos-duration="2500">
+                        <h4>Web Design</h4>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:80% ">80%</div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in-left" data-aos-duration="3000">
+                        <h4>Web Development</h4>
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:90% ">90%</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="zoom-in-left" data-aos-duration="2500">
-                <h4>Web Design</h4>
-                <div class="progress ">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:80% ">80%</div>
-                </div>
-            </div>
-            <div data-aos="zoom-in-left" data-aos-duration="3000">
-                <h4>Web Development</h4>
-                <div class="progress ">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated active " style="width:90% ">90%</div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -271,7 +282,8 @@
             <div>
                 <!-- <h1 class="text-center">cliant name</h1> -->
                 <p> <i class="fa fa-quote-left" aria-hidden="true"></i> Glory AutoTech was a pleasure to work with. Experts were professional in their attitude and delivered quality work on time. Also we found them as good listeners who understood what was
-                    being explained to them first time.We gladly recommend Glory AutoTech to anyone needing aptitudinal services. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                    being explained to them first time.We gladly recommend Glory AutoTech to anyone needing aptitudinal services.
+                    <i class="fa fa-quote-right" aria-hidden="true"></i></p>
             </div>
             <div>
                 <!-- <h1 class="text-center">cliant name</h1> -->
@@ -321,12 +333,12 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <select class="form-control">
-                        <option>SELECT DEPARTMENT</option>
-                        <option>App Development</option>
-                        <option>Ecommerce</option>
-                        <option>Web Design</option>
-                        <option>Web Development</option>
-                      </select>
+            <option>SELECT DEPARTMENT</option>
+            <option>App Development</option>
+            <option>Ecommerce</option>
+            <option>Web Design</option>
+            <option>Web Development</option>
+          </select>
                 </div>
             </div>
             <div class="col-md-2"></div>
@@ -372,7 +384,8 @@
             <div class="col-xs-6 col-md-2">
                 <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
                 <ul class="footer-links">
-                    <li><a href="https://goo.gl/maps/p8ufPgXcKxxGVErq8" target="_blank">814 ,Sns Arista <br> vesu surat , gujarat.</a></li>
+                    <li><a href="https://goo.gl/maps/p8ufPgXcKxxGVErq8" target="_blank">814 ,Sns Arista <br> vesu surat ,
+              gujarat.</a></li>
 
                 </ul>
             </div>
