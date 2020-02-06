@@ -4,7 +4,7 @@ import { PortfolioComponent } from './portfolio.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'project/:id',
     component: PortfolioComponent
   }
 ];
