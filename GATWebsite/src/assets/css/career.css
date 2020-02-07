@@ -43,9 +43,24 @@
     font-size: 20px;
     font-weight: 600;
 }
+.rules
+{
+    padding: 1em;
+}
+.panel a {
+    text-decoration: none;
+}
+.btn-primary
+{
+    margin-bottom: 1em;
+}
 
 .boxc {
     padding: 1em;
+    border: solid black;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 5px 5px#888888;
 }
 
 .boxc a {
@@ -55,6 +70,16 @@
 
 .boxc a:hover {
     color: blue;
+    
+}
+.zoom {
+    transition: transform 1.2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 .nicecolor {
