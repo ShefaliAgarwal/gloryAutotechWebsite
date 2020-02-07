@@ -1,6 +1,6 @@
-.nav a {
+.navbar-nav a {
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -44,16 +44,16 @@
     font-weight: 600;
 }
 
-.box {
+.boxc {
     padding: 1em;
 }
 
-.box a {
+.boxc a {
     text-decoration: none;
     color: black;
 }
 
-.box a:hover {
+.boxc a:hover {
     color: blue;
 }
 
@@ -224,6 +224,12 @@
 
 .social-icons a.dribbble:hover {
     background-color: #ea4c89
+}
+@media (max-width:500px){
+    .firstimage1 {
+        margin-top: -6em;
+        margin-left: 100px;
+    }
 }
 
 @media (max-width:767px) {
