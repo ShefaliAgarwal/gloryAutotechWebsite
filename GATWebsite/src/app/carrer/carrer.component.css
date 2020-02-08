@@ -250,11 +250,23 @@
 .social-icons a.dribbble:hover {
     background-color: #ea4c89
 }
+
+@media only screen and (max-width: 992px){
+    .firstimage1 {
+        margin-top: -6em;
+        margin-left: 342px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .firstimage1 {
+        margin-top: -6em;
+        margin-left: 305px;
+    }
+}
 @media (max-width:500px){
     .firstimage1 {
         margin-top: -6em;
         margin-left: 129px;
-        text-align: center;
     }
 }
 
