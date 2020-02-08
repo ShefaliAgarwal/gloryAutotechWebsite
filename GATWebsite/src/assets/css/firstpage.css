@@ -186,11 +186,11 @@ color: aqua;
 .button1 {
     background-color: white;
     color: black;
-    border: 2px solid #4CAF50;
+    border: 2px solid #08ADC3;
 }
 
 .button1:hover {
-    background-color: #4CAF50;
+    background-color: #08ADC3;
     color: white;
 }
 
@@ -213,7 +213,7 @@ color: aqua;
 }
 
 .services-inner {
-    border: 2px solid #7a7a7a;
+    border: 2px solid #08ADC3;
     margin-left: 35px;
     transition: .3s;
     background: #fff
@@ -230,7 +230,7 @@ color: aqua;
 .our-services-img span.fa {
     width: 68px;
     font-size: 40px;
-    color: gray;
+    color: #08ADC3;
     background: #fff;
 }
 
@@ -255,7 +255,7 @@ color: aqua;
 }
 
 .our-services-text h4::before {
-    background: #ff4f81 none repeat scroll 0 0;
+    background: #08ADC3 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
