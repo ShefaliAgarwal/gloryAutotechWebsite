@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+
 declare var jQuery: any;
 declare var AOS: any;
 @Component({
@@ -8,9 +11,12 @@ declare var AOS: any;
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  formGroup: FormGroup;
+  titleAlert: string = 'This field is required';
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.createForm();
     (function ($) {
       $(document).ready(function () {
         var els = document.querySelectorAll('.speak');
@@ -37,5 +43,26 @@ export class DashboardComponent implements OnInit {
     })(jQuery);
 
   }
+  createForm() {
+    let emailregex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    this.formGroup = this.formBuilder.group({
+      'name': ['', Validators.required],
+      'emailId': [null, [Validators.required, Validators.pattern(emailregex)], this.checkInUseEmail],
+      'phoneNo': ['', Validators.required],
+      'department': [''],
+      'message': ['', Validators.required],
+    });
+  }
 
+  checkInUseEmail(control) {
+    // mimic http database access
+    let db = ['tony@gmail.com'];
+    return new Observable(observer => {
+      setTimeout(() => {
+        let result = (db.indexOf(control.value) !== -1) ? { 'alreadyInUse': true } : null;
+        observer.next(result);
+        observer.complete();
+      }, 4000)
+    })
+  }
 }
