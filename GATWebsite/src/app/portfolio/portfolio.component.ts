@@ -11,36 +11,18 @@ declare var AOS: any;
 export class PortfolioComponent implements OnInit {
 
   id;
-  slideIndex = 1;
   constructor(private activateRoute: ActivatedRoute) {
   }
 
   ngAfterViewInit() {
-    this.showDivs(this.slideIndex);
   }
   ngOnInit() {
     this.id = this.activateRoute.snapshot.paramMap.get('id');
+    console.log('id', this.id);
     (function ($) {
       $(document).ready(function () {
         AOS.init();
       });
     })(jQuery);
-  }
-  plusDivs(n) {
-    this.showDivs(this.slideIndex += n);
-  }
-  showDivs(n) {
-    var i;
-    var x: any = document.getElementsByClassName("mySlides");
-    if (n > x.length) {
-      this.slideIndex = 1
-    }
-    if (n < 1) {
-      this.slideIndex = x.length
-    }
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    x[this.slideIndex - 1].style.display = "block";
   }
 }

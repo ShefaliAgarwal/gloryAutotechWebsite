@@ -8,11 +8,12 @@ import { FooterComponent } from './component/footer/footer.component';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [
     ReactiveFormsModule,
     FormsModule,
+    CommonModule,
     FooterComponent
   ]
 })
