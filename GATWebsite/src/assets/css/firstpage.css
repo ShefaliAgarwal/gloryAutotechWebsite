@@ -665,10 +665,19 @@ p.quia {
 /* end projects  */
 
 .progress-bar {
-    background-color: gray;
+    background-color: #08ADC3;
 }
 
-
+.btn-primary
+{
+    color: #fff;
+    background-color: #08ADC3;
+    border-color: #08ADC3;
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color: #08ADC3;
+}
 /* our cliant  */
 
 .parallax {
@@ -856,7 +865,7 @@ p.text-li {
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
-    background: #dc3545;
+    background: #08ADC3;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
