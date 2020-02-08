@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [FooterComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     FormsModule
   ],
-  exports: [ReactiveFormsModule,
-    FormsModule]
+  exports: [
+    ReactiveFormsModule,
+    FormsModule,
+    FooterComponent
+  ]
 })
 export class SharedModule { }
