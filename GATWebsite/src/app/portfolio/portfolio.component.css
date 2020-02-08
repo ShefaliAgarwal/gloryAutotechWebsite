@@ -70,11 +70,11 @@
 .button1 {
     background-color: white;
     color: black;
-    border: 2px solid rgb(243, 0, 134);
+    border: 2px solid #08ADC3;
 }
 
 .button1:hover {
-    background-color: rgb(243, 0, 134);
+    background-color: #08ADC3;
     color: white;
 }
 
