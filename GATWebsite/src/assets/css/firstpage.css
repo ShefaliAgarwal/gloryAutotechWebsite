@@ -824,10 +824,10 @@ p.text-li {
 .contact-form {
     background: #fff;
     margin-top: -35em;
-    margin-bottom: 5%;
+    margin-bottom: 10rem;
     width: 70%;
     position: absolute;
-    margin-left: 16em;
+    margin-left: 14em;
 }
 
 .contact-form .form-control {
@@ -846,7 +846,7 @@ p.text-li {
 }
 
 .contact-form form {
-    padding: 14%;
+    padding: 12%;
 }
 
 .contact-form form .row {
@@ -861,7 +861,7 @@ p.text-li {
 }
 
 .contact-form .btnContact {
-    width: 50%;
+    width: 20%;
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
@@ -967,6 +967,16 @@ p.text-li {
 @media (max-width:991px) {
     .site-footer [class^=col-] {
         margin-bottom: 30px
+    }
+}
+@media (max-width:768px){
+        .contact-form {
+            background: #fff;
+            margin-top: -2em;
+            margin-bottom: 3rem;
+            width: 70%;
+            position: inherit;
+            margin-left: 9em;
     }
 }
 
