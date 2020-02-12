@@ -33,12 +33,12 @@ export class DashboardComponent implements OnInit {
 
         setInterval(function () {
           $('#slideshow > div:first')
-            .fadeOut(1000)
+            .fadeOut(200)
             .next()
-            .fadeIn(1000)
+            .fadeIn(200)
             .end()
             .appendTo('#slideshow');
-        }, 8000);
+        },10000);
       });
     })(jQuery);
 
