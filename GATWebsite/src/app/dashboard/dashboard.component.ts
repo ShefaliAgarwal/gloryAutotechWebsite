@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
             .fadeIn(200)
             .end()
             .appendTo('#slideshow');
-        },10000);
+        },6000);
       });
     })(jQuery);
 

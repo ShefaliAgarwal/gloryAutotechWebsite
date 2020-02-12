@@ -1128,7 +1128,9 @@ p.text-li {
         width: 100%;
         height: 290px;
     }
-   
+   #service{
+       margin-top: 1em;
+   }
 }
 
 @media (max-width: 414px) {
