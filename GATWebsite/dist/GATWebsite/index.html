@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GloryAutoTech</title>
+    <base href="/">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- my stylesheet css  -->
+    <link rel="stylesheet" href="assets/css/firstpage.css">
+    <!-- favicol icon  -->
+    <link rel="icon" href="assets/image/2LOGO.png" type="image/x-icon">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- aso animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+<link rel="stylesheet" href="styles.f0ff88ae27c4026466c8.css"></head>
+
+<body>
+    <app-root></app-root>
+<script type="text/javascript" src="runtime.9495c8b6a4127ef47a75.js"></script><script type="text/javascript" src="es2015-polyfills.cda01ff7041101db831a.js" nomodule></script><script type="text/javascript" src="polyfills.481858ef51fe27531859.js"></script><script type="text/javascript" src="scripts.859e64cef1ef944f8beb.js"></script><script type="text/javascript" src="main.3d2d448b75d9e1d03fc6.js"></script></body>
+<!-- navigation  -->
+<script>
+    var els = document.querySelectorAll('.speak');
+    [].forEach.call(els, function(el) {
+        el.addEventListener('click', function() {
+            [].forEach.call(els, function(clk) {
+                clk.classList.remove('active');
+            });
+            el.classList.add('active');
+        });
+    });
+</script>
+<!-- end navigation  -->
+<!-- aso animation  -->
+<script>
+    AOS.init();
+</script>
+<!-- end aso animation  -->
+<script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 4000);
+</script>
+
+</html>
