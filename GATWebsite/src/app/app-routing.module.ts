@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: './dashboard/dashboard.module#DashboardModule' },
@@ -8,9 +8,13 @@ const routes: Routes = [
   { path: 'portfolio', loadChildren: './portfolio/portfolio.module#PortfolioModule' },
   { path: '**', redirectTo: '' },
 ];
-
+const routerOptions: ExtraOptions = {
+  useHash: false,
+  anchorScrolling: 'enabled',
+  // ...any other options you'd like to use
+};
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
