@@ -1,0 +1,8 @@
+.footer-nav li{
+    list-style: none;
+    text-align: justify;
+    padding-left: 3em;
+}
+.footer-nav li a {
+    color: #fff;
+}
