@@ -15,4 +15,10 @@ export class ContactComponent implements OnInit {
   navigate() {
     this.router.navigate(['/']);
   }
+  onCarrer(){
+    this.router.navigate(['/carrer']);
+  }
+  onContact(){
+    this.router.navigate(['/contact']);
+  }
 }
